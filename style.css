@@ -1,0 +1,134 @@
+:root {
+  --turquoise: #66e2dc;
+  --dark-orange: #fa7453;
+  --light-orange: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+html {
+  background: url("assets/bg-main-desktop.png") no-repeat;
+  background-size: auto;
+  /* background-position-x: -250px;
+  background-position-y: -200px; */
+}
+
+nav {
+  color: var(--black);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -1px;
+  color: var(--black);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  overflow: hidden;
+}
+
+.container {
+  flex: 1;
+}
+footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+.top-img {
+  position: absolute;
+  top: -2%;
+  right: 0px;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 32px;
+}
+.body1 {
+  color: var(--black);
+  font-size: 20px;
+  line-height: 34px;
+  width: 75%;
+}
+
+.body2 {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--dark-orange);
+  width: 25%;
+
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.price span {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 2px;
+  height: 61px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button span {
+  margin: 10px;
+}
+
+.ios-btn {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.ios-btn:hover {
+  background-color: var(--turquoise);
+}
+.android-btn {
+  background-color: var(--white);
+  color: var(--black);
+}
+.android-btn:hover {
+  background-color: var(--light-orange);
+}

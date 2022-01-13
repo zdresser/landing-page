@@ -25,15 +25,16 @@ nav {
 
 h1 {
   font-weight: bold;
-  font-size: 88px;
-  line-height: 88px;
+
+  font-size: 8vw;
+  line-height: 8vw;
   letter-spacing: -1px;
   color: var(--black);
 }
 
 h2 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 3vw;
   line-height: 52px;
 }
 body {
@@ -44,7 +45,13 @@ body {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
+.top-img {
+  position: absolute;
+  top: -4%;
+  right: 0px;
+  width: 15%;
+  height: auto;
+}
 .container {
   flex: 1;
 }
@@ -54,13 +61,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin-right: 7%;
-}
-.top-img {
-  position: absolute;
-  top: -4%;
-  right: 0px;
-  width: 15%;
-  height: auto;
 }
 
 footer span {
@@ -81,10 +81,10 @@ footer a {
 }
 .body1 {
   color: var(--black);
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 1.5vw;
+  line-height: 3vw;
 
-  margin: 60px 0;
+  margin-top: 5%;
 }
 
 .graphic {
@@ -99,6 +99,7 @@ footer a {
   position: relative;
   border-radius: 12px;
   z-index: -10;
+  overflow: hidden;
 }
 
 .graphic-background img {
@@ -123,26 +124,27 @@ footer a {
 
 .body2 {
   position: absolute;
-  right: 25%;
+  right: 18%;
   transform: translateY(40%);
   display: flex;
   flex-direction: column;
 
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.3vw;
+  line-height: 2vw;
   color: var(--white);
   background-color: var(--dark-orange);
-  width: 25%;
-
-  padding: 50px;
+  width: 30%;
+  padding: 3% 5%;
   border-radius: 10px;
-  z-index: 1;
-  margin-top: -2rem;
+}
+
+.price {
+  margin: 20px 0;
 }
 
 .price span {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 3vw;
   line-height: 52px;
 }
 
@@ -159,6 +161,7 @@ button {
 
 button span {
   margin: 10px;
+  font-weight: bold;
 }
 
 .ios-btn {
@@ -177,16 +180,40 @@ button span {
   background-color: var(--light-orange);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .graphic {
-    margin-top: 15%;
+    margin-top: 20%;
     margin-bottom: 15%;
   }
 
   .phone {
+    max-height: 40%;
+    width: auto;
+    margin-left: 11%;
+    transform: translateY(-20%);
+    position: absolute;
   }
   .body2 {
-    margin-bottom: 10%;
+    width: 40%;
+  }
+  .price {
+    font-size: 2vw;
+  }
+  .price span {
+    font-size: 4vw;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    flex-basis: 100%;
+    margin-bottom: 3%;
+  }
+  .footer-text {
+    width: 50%;
+    font-size: 1.7vw;
+  }
+  .footer-images {
   }
 }
 
@@ -195,7 +222,10 @@ button span {
     display: flex;
     flex-direction: column;
   }
-  .body2 {
-    position: relative;
+
+  .footer-text {
+    flex-basis: 100%;
+    margin-bottom: 5%;
+    font-size: 2vw;
   }
 }

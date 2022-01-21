@@ -5,8 +5,12 @@
   --white: #fcfaf9;
   --black: #191826;
 }
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+* {
   margin: 0;
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
@@ -218,14 +222,88 @@ button span {
 }
 
 @media (max-width: 600px) {
+  html {
+    background-size: auto;
+    background-position-x: -950px;
+    background-position-y: -600px;
+  }
+  nav {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  nav img {
+    width: 30%;
+    height: auto;
+  }
+  body {
+    margin: 0 0;
+  }
+  .top-img {
+    display: none;
+  }
+  .top-text {
+    width: 100%;
+  }
+  .slogan {
+    width: 78%;
+    margin: 5% 5%;
+  }
+  .body1 {
+    width: 90%;
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    margin: 0 5%;
+    margin-bottom: 25%;
+  }
   .graphic {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    margin: 0 0;
   }
 
+  .phone {
+    margin-left: 30%;
+  }
+  .graphic-background {
+    width: 100%;
+    margin: 0 0;
+  }
+  .body2 {
+    width: 100%;
+    position: relative;
+    right: 0;
+    transform: translateY(-40%);
+    align-self: center;
+    justify-self: center;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .body2 h2 {
+    font-size: 6vw;
+  }
+
+  .price {
+    font-size: 3vw;
+  }
+  .price span {
+    font-size: 9vw;
+  }
+  footer {
+    margin-top: -20%;
+    margin-left: 5%;
+  }
+  .footer-logo {
+    width: 30%;
+  }
   .footer-text {
+    width: 50%;
     flex-basis: 100%;
-    margin-bottom: 5%;
-    font-size: 2vw;
+    margin-bottom: 10%;
+    font-size: 3vw;
+  }
+
+  .footer-images {
+    margin-bottom: 10%;
   }
 }
